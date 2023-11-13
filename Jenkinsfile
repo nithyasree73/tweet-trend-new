@@ -54,7 +54,7 @@ environment {
         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
-                     def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJudTZOS2VUUkFRTmR2S05LbjdOOVpudkk4OG9yNERPdzN5REhGcmNyTVdFIn0.eyJzdWIiOiJqZmFjQDAxaGV5cmZ2dHM0bTdzMHhydmVqdGcxeGQwL3VzZXJzL25pdGh5YXNyZWU3MzczQGdtYWlsLmNvbSIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnMvYWRtaW4iLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAxaGV5cmZ2dHM0bTdzMHhydmVqdGcxeGQwIiwiaWF0IjoxNjk5ODkyNjQ4LCJqdGkiOiJhMjA0YTBkNy0xYzYxLTRiMGMtYmMyOC1hNmFkMjcyM2JhZWQifQ.RAk4BltsU8Qb7eovxjaJRsuAX6fOTxyfDPya0JJXHDn_R6kt0x2hC7B5ArpWETLukaYp5RW467R_LT2XdbjFzzJteY_MIr4PkqrIL5DDpjAZwOl6pJWLAUgqn_rNOpvbHxf4X7-K-U-FmwMdfiFi8oRu3NoJ4n22SjaPs1rSdVeQglKOgSm9BX59Ta-NRZqR4uKXJ_Et_5DVhuE51T6lukWmY2cJPex1fOo1mmIVejCB2aJsl99oh9DjNnf2WxbDy4ERdWItxkszx8aA4yFTOiBu7lmDSTt5E00fh3I9SsxR8Wn94LB51voYh4bYzuBf0ZRn7Sn1M1K2kagd3hSWeg"
+                     def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"a204a0d7-1c61-4b0c-bc28-a6ad2723baed"
                      def properties = "buildid=${env.BUILD_ID},commitid=${GIT_COMMIT}";
                      def uploadSpec = """{
                           "files": [
