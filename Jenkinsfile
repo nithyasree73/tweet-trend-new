@@ -1,6 +1,6 @@
 def registry = 'https://nithyasree.jfrog.io'
-// def imageName = 'nithyasree.jfrog.io/namg-docker-local/namtrend'
-// def version   = '2.1.3'
+def imageName = 'nithyasree.jfrog.io/namg-docker-local/namtrend'
+def version   = '2.1.3'
 
 pipeline {
     agent {label 'maven'}
@@ -90,7 +90,7 @@ environment {
         steps {
             script {
                 echo '<--------------- Docker Publish Started --------------->'  
-                docker.withRegistry(registry, 'jfrogartifact-credentials'){
+                docker.withRegistry(registry, 'a204a0d7-1c61-4b0c-bc28-a6ad2723baed'){
                 app.push()
                 }    
                 echo '<--------------- Docker Publish Ended --------------->'  
