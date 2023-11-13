@@ -60,7 +60,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "libs-release-local/{1}",
+                              "target": "namg-libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
